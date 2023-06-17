@@ -56,6 +56,10 @@ variable "rds_allocated_storage" {
 variable "rds_db_name" {
   default = "dbjoomlaintellij"
 }
+# RDS Identifier
+variable "rds_identifier" {
+  default = "dbjoomlaintellij"
+}
 # RDS DB Engine
 variable "rds_engine" {
   default = "mysql"

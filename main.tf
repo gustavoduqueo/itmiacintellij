@@ -83,6 +83,7 @@ resource "aws_db_subnet_group" "SNG_Joomla_IntelliJ" {
 ############# RDS MySQL #############
 
 resource "aws_db_instance" "RDS_Joomla_IntelliJ" {
+  identifier = "${var.rds_identifier}"
   allocated_storage    = "${var.rds_allocated_storage}"
   name                 = "${var.rds_db_name}"
   engine               = "${var.rds_engine}"
