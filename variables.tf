@@ -5,7 +5,7 @@ variable "aws_region" {
 
 # Profile
 variable "aws_profile" {
-  default = "awsitmlab40"
+  default = "itmlab30"
 }
 variable "shared_credentials_file" {
   default = "/Users/gduque/.aws/credentials"
