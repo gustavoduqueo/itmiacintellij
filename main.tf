@@ -17,6 +17,10 @@ resource "aws_subnet" "SUBNET_ITMIaC_1_IntelliJ" {
   cidr_block = "${var.subnet_1_cidr}"
   availability_zone = "us-east-1a"
   map_public_ip_on_launch = true
+  tags = {
+    "Name" = "SUBNET_ITMIaC_1_IntelliJ"
+    "Env" = "Lab"
+  }
   depends_on = [
     aws_vpc.VPCITMIaCIntelliJ
   ]
@@ -27,6 +31,10 @@ resource "aws_subnet" "SUBNET_ITMIaC_2_IntelliJ" {
   cidr_block = "${var.subnet_2_cidr}"
   availability_zone = "us-east-1c"
   map_public_ip_on_launch = true
+  tags = {
+    "Name" = "SUBNET_ITMIaC_2_IntelliJ"
+    "Env" = "Lab"
+  }
   depends_on = [
     aws_vpc.VPCITMIaCIntelliJ
   ]
